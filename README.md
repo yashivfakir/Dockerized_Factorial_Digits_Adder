@@ -6,14 +6,14 @@ The project explores the containerization of a factorial algorithm. The algorith
  > **For example**  given an input of 4:
 The Factorial of 4 is:
 
-'''math
+```math
 4! =  4 \times 3 \times 2 \times 1 = 24
-'''
+```
 >**Then,** parse the factorial and sum the digits as follows:
 
-'''math
+```math
 Output = 24 =  2 + 4 = 6
-'''
+```
 
 The containerized application has been built to be executeable and requires input upon activating the container.
 
@@ -44,17 +44,17 @@ Several conditions need to be met in order for a successful implementation.
 Once the repository contents are cloned to a host machine, the application can then be built.
 This can be done from the Technical_Assignment Directory in a terminal window by running the following command:
 
-'''bash
+```bash
 docker image build -t factorial-digits .
-'''
+```
 Note: Docker commands may need administrative priviliages in order to execute the command.
 
 ### Container Execution
 
 Once the image being, factorial-digits, has been built, the container can be executed using the following command where INPUT_NUMBER is replaced with the input integer number:
 
-'''bash
+```bash
 docker run --rm factorial-digits INPUT_NUMBER
-'''
+```
 Note: Docker commands may need administrative priviliages in order to execute the command.
 If no input or input that is not an integer value is provided with the docker command, an error saying 'requires input' or 'invalid input' will be thrown respectively. Once the program has been executed, the container and Docker command has been built to shutdown upon completion.
