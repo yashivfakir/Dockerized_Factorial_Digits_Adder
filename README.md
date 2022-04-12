@@ -24,7 +24,7 @@ The project involved the usage of several development languages/tools and librar
 - [Docker](https://www.docker.com/) - Used to define and build the image that containerizes the project.
 
 ### Repository Contents
-The project consists of a .tar.gz compressed folder that includes a directory called Technical_Assignment. The directory has the Docker build file and the Python script that implements the algorithm.
+The project consists of a .tar.gz compressed folder that includes a directory called Docker_Build_Directory. The directory has the Docker build file and the Python script that implements the algorithm.
 
 ## Project Implementation:
 
@@ -33,14 +33,14 @@ Several conditions need to be met in order for a successful implementation.
 ### Prerequisites
 **Before the project can be built, certain components are needed:**
 
-1. Firstly, since the files are compressed as a .tar.gz file, a decompression program, such as 7-Zip, would be needed to extract the contents of the compressed file.
+1. Firstly, since the files are compressed as a .tar.gz file, a decompression program, such as 7-Zip, would be needed to extract the contents of the compressed .tar.gz file.
 2. Secondly, Docker should be installed on the host machine in order to build and run the containerized application.
 3. Thirdly, a stable internet connection is required to download the required libraries.
 
 ### Build Instructions
 
 Once the repository contents are cloned to a host machine, the application can then be built.
-This can be done from the Technical_Assignment Directory in a terminal window by running the following command:
+This can be done from the Docker_Build_Directory in a terminal window by running the following command:
 
 ```bash
 sudo docker image build -t factorial-digits .
