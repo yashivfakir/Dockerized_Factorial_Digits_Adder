@@ -7,7 +7,7 @@ The project explores the containerization of a factorial algorithm. The algorith
 The Factorial of 4 is:
 
 ```math
-4! =  4 \times 3 \times 2 \times 1 = 24
+4! =  4 x 3 x 2 x 1 = 24
 ```
 >**Then,** parse the factorial and sum the digits as follows:
 
