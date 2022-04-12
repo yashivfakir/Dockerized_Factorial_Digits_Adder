@@ -45,16 +45,16 @@ Once the repository contents are cloned to a host machine, the application can t
 This can be done from the Technical_Assignment Directory in a terminal window by running the following command:
 
 ```bash
-docker image build -t factorial-digits .
+sudo docker image build -t factorial-digits .
 ```
-Note: Docker commands may need administrative priviliages in order to execute the command.
+Note: Docker commands may need administrative priviliages in order to execute the command depending on the host machine OS.
 
 ### Container Execution
 
 Once the image being, factorial-digits, has been built, the container can be executed using the following command where INPUT_NUMBER is replaced with the input integer number:
 
 ```bash
-docker run --rm factorial-digits INPUT_NUMBER
+sudo docker run --rm factorial-digits INPUT_NUMBER
 ```
-Note: Docker commands may need administrative priviliages in order to execute the command.
+Note: Docker commands may need administrative priviliages in order to execute the command depending on the host machine OS.
 If no input or input that is not an integer value is provided with the docker command, an error saying 'requires input' or 'invalid input' will be thrown respectively. Once the program has been executed, the container and Docker command has been built to shutdown upon completion.
