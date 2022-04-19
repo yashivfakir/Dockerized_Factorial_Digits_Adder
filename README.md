@@ -25,18 +25,18 @@ The project involved the usage of several development languages/tools and librar
 - [Docker](https://www.docker.com/) - Used to define and build the image that containerizes the project.
 
 ### Repository Contents
-The project consists of a yashivfakir.tar.gz compressed folder that includes a directory called Docker_Build_Directory. The directory has the Docker build file and the Python scripts that implements the algorithm.
+The project consists of a yashivfakir.tar.gz compressed folder that includes a directory called 'yashivfakir' when extracted. The directory has the Docker build file and the Python scripts that implements the algorithm.
 ```
 yashivfakir.tar.gz
 │
-└── Docker_Build_Directory
+└── yashivfakir
      │
      └── Dockerfile
      └── Factorial_Digits_Adder_THREADED.py  (Main script)
      └──Thread_Class.py                      (Supporting script)
      └──Threads_Math_Class.py                (Supporting script)
  ```
-Also included in the repsitory is a a directory named Other_Implementations. The directory contains a benchmark implementation that was used to benchmark the project execution in terms of time with the existing Numpy factorial library and a non-threaded implementation of the project.
+Also included in the repsitory is a a directory named Other_Implementations. The directory contains a benchmark implementation that was used to benchmark the project execution in terms of time, utilizing the existing Numpy factorial library and a non-threaded implementation of the project.
 ```
 Other_Implementations
    │
@@ -58,19 +58,19 @@ Other_Implementations
 ### Build Instructions
 
 Once the repository contents are cloned to a host machine, the application can then be built.
-This can be done by executing the following command in a terminal window from the Docker_Build_Directory file location:
+This can be done by executing the following command in a terminal window from the 'yashivfakir' file location:
 
 ```bash
 sudo docker image build -t factorial-digits .
 ```
-Note: Docker commands may need administrative priviliages in order to execute the command. The 'sudo' part of the command provides admin privileges for Linux Ubuntu and may differ for other OS's and can thus be dropped from the command.
+Note: Docker commands may need administrative priviliages in order to execute the command. The 'sudo' part of the command provides admin privileges for Linux Ubuntu (and other Linux distros) and may differ for other OS's and can thus be dropped from the command the host machine OS does not conform to using 'sudo'.
 
 ### Container Execution
 
-Once the image being, factorial-digits, has been built, the container can be executed using the following command where INPUT_NUMBER is replaced with the input integer number:
+Once the image being, factorial-digits, has been built, the container can be executed using the following command where INPUT_NUMBER is replaced with theinput integer number needing to be factorized:
 
 ```bash
 sudo docker run --rm factorial-digits INPUT_NUMBER
 ```
-Note: Docker commands may need administrative priviliages in order to execute the command. The 'sudo' part of the command provides admin privileges for Linux Ubuntu and may differ for other OS's and can thus be dropped from the command.
-If no input or input that is not an integer value is provided with the docker command, an error saying 'requires input' or 'invalid input' will be thrown respectively. Once the program has been executed, the Docker command implements the shutdown of the container the program execution.
+Note: Docker commands may need administrative priviliages in order to execute the command. The 'sudo' part of the command provides admin privileges for Linux Ubuntu and may differ for other OS's and can thus again be dropped from the command if this is the case.
+If no input or input that is not an integer value is provided with the docker command, an error saying 'requires input' or 'invalid input' will be thrown respectively. Once the program has been executed, the Docker command implements the shutdown of the container and program execution.
