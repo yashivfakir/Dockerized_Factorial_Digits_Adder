@@ -25,9 +25,25 @@ The project involved the usage of several development languages/tools and librar
 - [Docker](https://www.docker.com/) - Used to define and build the image that containerizes the project.
 
 ### Repository Contents
-The project consists of a yashivfakir.tar.gz compressed folder that includes a directory called Docker_Build_Directory. The directory has the Docker build file and the Python scripts that implements the algorithm. Also included in the repsitory is a a directory named Other_Implementations, which contains a benchmark implementation that was used to benchmark the project execution in terms of time with the existing Numpy factorial library and a non-threaded implementation of the project. The implemenations are named:
-- Factorial_Digits_Adder_BENCHMARK.py
-- Factorial_Digits_Adder_UN_THREADED.py
+The project consists of a yashivfakir.tar.gz compressed folder that includes a directory called Docker_Build_Directory. The directory has the Docker build file and the Python scripts that implements the algorithm.
+```
+yashivfakir.tar.gz
+│
+└── Docker_Build_Directory
+     │
+     └── Dockerfile
+     └── Factorial_Digits_Adder_THREADED.py  (Main script)
+     └──Thread_Class.py                      (Supporting script)
+     └──Threads_Math_Class.py                (Supporting script)
+ ```
+Also included in the repsitory is a a directory named Other_Implementations. The directory contains a benchmark implementation that was used to benchmark the project execution in terms of time with the existing Numpy factorial library and a non-threaded implementation of the project.
+```
+Other_Implementations
+   │
+   └── Factorial_Digits_Adder_BENCHMARK.py
+   └── Factorial_Digits_Adder_UN_THREADED.py
+   
+```
 
 
 ## Project Implementation:
